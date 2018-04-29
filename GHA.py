@@ -29,7 +29,7 @@ class GHA:
 
 if __name__ == '__main__':
     H = GHA()
-    H.train(.0000001, 400)
+    H.train(.0000001, 400) #learning rate and number of epochs
     pca_training = H.forward(H.x, H.w)
     pca_testing = H.forward(H.test, H.w)
 
